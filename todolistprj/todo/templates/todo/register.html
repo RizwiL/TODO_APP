@@ -1,0 +1,19 @@
+{% extends 'todo/main.html' %}
+
+{% block content %}
+
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+<div class="card-body">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+    </div>
+    <div class="card-body">
+        <input class="button" type="submit" value="Register Now">
+        <small><p>Have an account already? <a href="{% url 'login' %}">Login Now</a></p></small>
+    </div>
+    </form>
+</div>
+{% endblock content %}
